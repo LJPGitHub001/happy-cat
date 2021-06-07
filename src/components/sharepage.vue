@@ -8,11 +8,11 @@
     <div class="top_message">
       <div class="top_message_left">
         <img src="../assets/img/star.png" alt="">
-        <span>5.4分</span>
+        <span>4.9分</span>
       </div>
       <div class="top_message_center">
         <img src="../assets/img/download.png" alt="">
-        <span>40万下载</span>
+        <span>40.12万下载</span>
       </div>
       <div class="top_message_right">
         <img src="../assets/img/size.png" alt="">
@@ -55,37 +55,37 @@ export default {
       comment:['大公司出品', '无门槛提现','赚的挺多的','真给分红','已玩好几年'],
       listmessage: [
         {id: 1,
-         avatar: require('../assets/img/icon.png'),
+         avatar: require('../assets/img/id1.webp'),
          listname: '沧海桑田',
          listmoney: '已赚890.76元',
          listcont: '这里的人们老好了，按点就组织吃饭，吃的还挺好的，老伙计们快来参与进来吧',
-         listimg:[require('../assets/img/icon.png'),require('../assets/img/icon.png'),require('../assets/img/icon.png')],
+         listimg:[require('../assets/img/bottom1-1.jpeg'),require('../assets/img/bottom1-2.jpeg'),require('../assets/img/bottom1-3.jpeg')],
         },
         {id: 2,
-         avatar: '',
-         listname: '沧海桑田',
-         listmoney: '已赚890.76元',
+         avatar: require('../assets/img/id2.webp'),
+         listname: '哈哈乐',
+         listmoney: '已赚183.99元',
          listcont: '这里的人们老好了，按点就组织吃饭，吃的还挺好的，老伙计们快来参与进来吧',
-         listimg:[require('../assets/img/icon.png'),require('../assets/img/icon.png'),require('../assets/img/icon.png')],
+         listimg:[require('../assets/img/bottom2-1.jpeg'),require('../assets/img/bottom2-2.jpeg'),require('../assets/img/bottom2-3.jpeg')],
         },
         {id: 3,
-         avatar: '',
-         listname: '沧海桑田',
-         listmoney: '已赚890.76元',
+         avatar: require('../assets/img/id3.webp'),
+         listname: 'Lz',
+         listmoney: '已赚342.36元',
          listcont: '这里的人们老好了，按点就组织吃饭，吃的还挺好的，老伙计们快来参与进来吧',
-         listimg:[require('../assets/img/icon.png'),require('../assets/img/icon.png'),require('../assets/img/icon.png')],
+         listimg:[require('../assets/img/bottom3-1.jpeg'),require('../assets/img/bottom3-2.jpeg'),require('../assets/img/bottom3-3.jpeg')],
         },
         {id: 4,
-         avatar: '',
-         listname: '沧海桑田',
-         listmoney: '已赚890.76元',
+         avatar: require('../assets/img/id4.webp'),
+         listname: '得意猫007',
+         listmoney: '已赚1534.69元',
          listcont: '这里的人们老好了，按点就组织吃饭，吃的还挺好的，老伙计们快来参与进来吧',
          listimg:[require('../assets/img/icon.png'),require('../assets/img/icon.png'),require('../assets/img/icon.png')],
         },
         {id: 5,
-         avatar: '',
-         listname: '沧海桑田',
-         listmoney: '已赚890.76元',
+         avatar: require('../assets/img/id5.webp'),
+         listname: '老婆孩子热炕头',
+         listmoney: '已赚3500.01元',
          listcont: '这里的人们老好了，按点就组织吃饭，吃的还挺好的，老伙计们快来参与进来吧这里的人们老好了，按点就组织吃饭，吃的还挺好的，老伙计们快来参与进来吧这里的人们老好了，按点就组织吃饭，吃的还挺好的，老伙计们快来参与进来吧',
          listimg:[require('../assets/img/icon.png'),require('../assets/img/icon.png'),require('../assets/img/icon.png')],
         }

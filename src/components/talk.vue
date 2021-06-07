@@ -39,7 +39,7 @@ export default {
 .bottom_top_img{
   width: 34px;
   height: 34px;
-  background-color:brown;
+  background-color:#f7f7f7;
   border-radius: 17px;
   margin-left: 4.8%;
 }
@@ -47,6 +47,7 @@ export default {
   width: 34px;
   height: 34px;
   border-radius: 17px;
+  vertical-align: middle;
 }
 .bottom_top_message{
   margin-left: 8px;
@@ -78,9 +79,11 @@ export default {
 .bottom_img div{
   width: 108px;
   height: 108px;
-  background-color: #D8D8D8;
+  background-color: #f7f7f7;
   border-radius: 8px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 .bottom_img div img{
   width: 100%;
