@@ -9,7 +9,7 @@ import sharepage from './components/sharepage.vue'
 export default {
   name: 'App',
   components: {
-    sharepage
+    sharepage,
   }
 }
 </script>

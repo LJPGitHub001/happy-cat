@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="top_btn">
-      <button>立即下载</button>
+      <button @click="downAPK">立即下载</button>
     </div>
   </div>
 
@@ -36,7 +36,6 @@
   <div class="bottom" v-for="item in listmessage" :key="item.id">
     <talk :bottomlist='item'></talk>
   </div>
-
 
   <div class="foot">
     <p>只显示最近5条评论</p>
@@ -84,7 +83,7 @@ export default {
         },
         {id: 5,
          avatar: require('../assets/img/id5.webp'),
-         listname: '老婆孩子热炕头',
+         listname: '春风又绿江南岸',
          listmoney: '已赚3500.01元',
          listcont: '这里的人们老好了，按点就组织吃饭，吃的还挺好的，老伙计们快来参与进来吧这里的人们老好了，按点就组织吃饭，吃的还挺好的，老伙计们快来参与进来吧这里的人们老好了，按点就组织吃饭，吃的还挺好的，老伙计们快来参与进来吧',
          listimg:[require('../assets/img/icon.png'),require('../assets/img/icon.png'),require('../assets/img/icon.png')],
@@ -92,7 +91,11 @@ export default {
       ]
     }
   },
-  
+  methods: {
+    downAPK() {
+      window.open('https://www.baidu.com');
+    }
+  },
 }
 </script>
 
