@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>得意猫-走路步数兑现金秒到账！</title>
+  <style>
+    *{
+  margin: 0;
+  padding: 0;
+  /* background-color: bisque; */
+  }
+  .top_icon{
+    text-align: center;
+  }
+  .top_icon img{
+    width: 72px;
+    height: 72px;
+  }
+  .top_icon p{
+    font-size: 17px;
+    margin-top: 18px;
+  }
+  .top_icon{
+    margin-top: 15px;
+  }
+  .top_message img{
+    width: 14px;
+    height: 14px;
+  }
+  .top_message span{
+    font-size: 13px;
+    color: #666666;
+  }
+  .top_btn button{
+    width: 246px;
+    height: 36px;
+    background-color: #0288EB;
+    color: #fff;
+    border: none;
+    border-radius: 18px;
+    font-size: 15px;
+  }
+  .top_btn{
+    text-align: center;
+    margin-top: 18px;
+  }
+  .top_message{
+    display: flex;
+    justify-content: center;
+  }
+  .top_message_left, .top_message_center, .top_message_right{
+    display: flex;
+    align-items: center;
+  }
+  .top_message_center{
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .top_message span{
+    margin-left: 7px;
+  }
+  .top_message{
+    margin-top: 18px;
+  }
+  .center{
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    margin-top: 22px;
+  }
+  .center_top{
+    margin-left: 4.8%;
+    font-size: 16px;
+  }
+  .center_top span{
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .center_bottom{
+    margin-right: 4.8%;
+  }
+  .center_bottom span{
+    color: #FF2B2B;
+    font-size: 14px;
+  }
+  .center_tips{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4.8%;
+  }
+  .center_tips div{
+    width: 89px;
+    height: 29px;
+    background-color: #FDEDF0;
+    border-radius: 15px;
+    margin-top: 12px;
+    text-align: center;
+    margin-right: 8px;
+  }
+  .center_tips span{
+    color: #890000;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 29px;  
+  }
+  .bottom_top{
+    display: flex;
+    margin-top: 22px;
+  }
+  .bottom_top_img{
+    width: 34px;
+    height: 34px;
+    background-color:#f7f7f7;
+    border-radius: 17px;
+    margin-left: 4.8%;
+  }
+  .bottom_top_img img{
+    width: 34px;
+    height: 34px;
+    border-radius: 17px;
+    vertical-align: middle;
+  }
+  .bottom_top_message{
+    margin-left: 8px;
+  }
+  .bottom_top_id{
+    font-size: 13px;
+    color: #333;
+    font-weight: 500;
+  }
+  .bottom_top_money{
+    font-size: 12px;
+    color: #FF2B2B;
+    font-weight: 500;
+  }
+  .bottom_message p{
+    margin-left: 4.8%;
+    margin-right: 4.8%;
+    font-size: 14px;
+    margin-top: 13px;
+    font-weight: 400;
+  }
+  .bottom_img{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 4.8%;
+    margin-right: 4.8%;
+    margin-top: 12px;
+  }
+  .bottom_img div{
+    width: 108px;
+    height: 108px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  .bottom_img div img{
+    width: 100%;
+  }
+  .bottom_img_to{
+    margin-left: 1.8%;
+    margin-right: 1.8%;
+  } 
+  .foot{
+    height: 74px;
+    background-color: #fff;
+    margin-left: 4.8%;
+    margin-right: 4.8%;
+  }
+  .foot p{
+    font-size: 13px;
+    color: #999;
+    text-align: center;
+    line-height: 74px;
+  }
+  </style>
+</head>
+<body>
+  <div class="top">
+    <div class="top_icon">
+      <img src="./img/icon.png" alt="">
+      <p>得意猫</p>
+    </div>
+    <div class="top_message">
+      <div class="top_message_left">
+        <img src="./img/star.png" alt="">
+        <span>4.9分</span>
+      </div>
+      <div class="top_message_center">
+        <img src="./img/download.png" alt="">
+        <span>40.12万下载</span>
+      </div>
+      <div class="top_message_right">
+        <img src="./img/size.png" alt="">
+        <span>15.56Mb</span>
+      </div>
+    </div>
+    <div class="top_btn">
+      <button onclick="downAPK()">立即下载</button>
+    </div>
+  </div>
+
+  <div class="center">
+    <div class="center_top"><span>评价30W+</span></div>
+    <div class="center_bottom"><span>👍好评率98%</span></div>
+  </div>
+
+  <div class="center_tips">
+    <div><span>大公司出品</span></div>
+    <div><span>无门槛提现</span></div>
+    <div><span>赚的挺多的</span></div>
+    <div><span>真给分红</span></div>
+    <div><span>已玩好几年</span></div>
+  </div>
+  <!-- 第一条 -->
+  <div class="bottom">
+    <div class="bottom_top">
+      <div class="bottom_top_img"><img src="./img/id1.webp" alt=""></div>
+      <div class="bottom_top_message">
+        <p class="bottom_top_id">沧海桑田</p>
+        <p class="bottom_top_money">已赚890.76元</p>
+      </div> 
+    </div>
+
+    <div class="bottom_message">
+      <p>得意猫有玩家微信群，大家一起赚点钱，还可以聊聊天，打发无聊的时光，群主每天还发红包，是个不错的大家庭。</p>
+    </div>
+
+    <div class="bottom_img">
+      <div><img onclick="bigImg(this)" src="./img/bottom1-1.jpeg" alt=""></div>
+      <div class="bottom_img_to"><img onclick="bigImg(this)" src="./img/bottom1-2.jpeg" alt=""></div>
+      <div><img onclick="bigImg(this)" src="./img/bottom1-3.jpeg" alt=""></div>
+    </div>
+  </div>
+   <!-- 第二条 -->
+  <div class="bottom">
+    <div class="bottom_top">
+      <div class="bottom_top_img"><img src="./img/id2.webp" alt=""></div>
+      <div class="bottom_top_message">
+        <p class="bottom_top_id">哈哈乐</p>
+        <p class="bottom_top_money">已赚183.99元</p>
+      </div> 
+    </div>
+
+    <div class="bottom_message">
+      <p>玩得意猫半个月，中了一次88元大奖，这个产品很赞！我的运气也真好！</p>
+    </div>
+
+    <div class="bottom_img">
+      <div><img onclick="bigImg(this)" src="./img/bottom2-1.jpeg" alt=""></div>
+      <div class="bottom_img_to"><img onclick="bigImg(this)" src="./img/bottom2-2.jpeg" alt=""></div>
+      <div><img onclick="bigImg(this)" src="./img/bottom2-3.jpeg" alt=""></div>
+    </div>
+  </div>
+   <!-- 第三条 -->
+  <div class="bottom">
+    <div class="bottom_top">
+      <div class="bottom_top_img"><img src="./img/id3.webp" alt=""></div>
+      <div class="bottom_top_message">
+        <p class="bottom_top_id">Lz</p>
+        <p class="bottom_top_money">已赚342.36元</p>
+      </div> 
+    </div>
+
+    <div class="bottom_message">
+      <p>玩了半年，获得了分红资格，玩了不下几十款分红产品，唯一让我拿到分红，还每天给我真正分红的产品，良心产品，必须赞一下！</p>
+    </div>
+
+    <div class="bottom_img">
+      <div><img onclick="bigImg(this)" src="./img/bottom3-1.jpeg" alt=""></div>
+      <div class="bottom_img_to"><img onclick="bigImg(this)" src="./img/bottom3-2.jpeg" alt=""></div>
+      <div><img onclick="bigImg(this)" src="./img/bottom3-3.jpeg" alt=""></div>
+    </div>
+  </div>
+   <!-- 第四条 -->
+  <div class="bottom">
+    <div class="bottom_top">
+      <div class="bottom_top_img"><img src="./img/id4.webp" alt=""></div>
+      <div class="bottom_top_message">
+        <p class="bottom_top_id">得意猫007</p>
+        <p class="bottom_top_money">已赚1534.69元</p>
+      </div> 
+    </div>
+
+    <div class="bottom_message">
+      <p>满1元就能提现，不限制次数，也没有其他附加条件。每天用来赚点小钱，算是不错的产品</p>
+    </div>
+
+    <div class="bottom_img">
+      <div><img src="./img/bottom4-1.jpeg" alt=""></div>
+      <div class="bottom_img_to"><img src="./img/bottom4-2.jpeg" alt=""></div>
+      <div><img src="./img/bottom4-3.jpeg" alt=""></div>
+    </div>
+  </div>
+   <!-- 第五条 -->
+  <div class="bottom">
+    <div class="bottom_top">
+      <div class="bottom_top_img"><img src="./img/id5.webp" alt=""></div>
+      <div class="bottom_top_message">
+        <p class="bottom_top_id">春风又绿江南岸</p>
+        <p class="bottom_top_money">已赚3500.01元</p>
+      </div> 
+    </div>
+
+    <div class="bottom_message">
+      <p>每天坚持走路，每天走3000步，在金钱的激励下，我已经走了大半年，不得不说，得意猫，不仅让我赚到了一些钱，还让我得到了健康。退休老人的最爱。</p>
+    </div>
+
+    <div class="bottom_img">
+      <div><img src="./img/bottom5-1.jpeg" alt=""></div>
+      <div class="bottom_img_to"><img src="./img/bottom5-2.jpeg" alt=""></div>
+      <div><img src="./img/bottom5-3.jpeg" alt=""></div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <p>只显示最近5条评论</p>
+  </div>
+  <script>
+
+    //点击跳转至下载链接
+    function downAPK(){
+      window.open('https://www.baidu.com');
+    };
+
+    //点击放大图片
+    function bigImg(el) {
+      const imgSrc = el.getAttribute('src'); //获取当前的图片链接
+      // console.log(imgSrc);
+
+      let _showImg_ = document.getElementById('showImg');
+      const body = document.body;
+      _showImg_ = document.createElement('div');
+      _showImg_.setAttribute('id', 'showImg');
+      _showImg_.setAttribute('style', `
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        position:fixed;
+        z-index:1000;
+        left:0;top:0;right:0;bottom:0;
+        background:rgba(0,0,0,0.7);`
+      );
+      _showImg_.innerHTML = `<img src='${imgSrc}' style="max-height: 100%;" />`;
+      body.appendChild(_showImg_);
+
+      _showImg_.addEventListener('click', function (e) {
+        e.stopPropagation();
+        this.style.display = 'none';
+      }); 
+    }
+    
+  </script>
+</body>
+</html>

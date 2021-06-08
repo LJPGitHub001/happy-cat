@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <style>
+    @font-face {
+      font-family: "iconfontTest";
+      src: url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAKUAAsAAAAABkQAAAJIAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcApQYQE2AiQDCAsGAAQgBYRtBzAbhwXIHpIkkEoEFKKI7jHABPHw/OHv3PdeawwMx+QxNfuUwA+jAkmsOJJ4C7z/nct/A8KojdsDd2pEChUWftq0nGaAbsIBCjN+/oQje24TbnItkuVJyifunf4J9EHmA8pxLxpr0qQuoC4OpAD3wiiyQgm8YeyCF/iYQKdZE2KnC2ubUKWwVwXigRkKVBUiisLy7UJrw8EiXpRrT08pDzxH349/yagiacnspovGvA5TXzpFuVmbdgJCFAR0vAUZ20AhbhozZ0oF40p1ZsosgmPVB1/WGrjFUR2C/XV2bTeYhspnUnnqR80neKyJhoCJST+LGDq/f399adPx9rWt5uatg949dg6lerNgylwpl7uZ/o/4kO0iTx6mAGoxveZhiCEY+zba7xt3/9u7Cvj88iEK1WKBYT7QvhNv8DNUA/uKobFdqWiqxuFk6CQtnTpRAQcG/U61jpy5ENqNTPC1mcmQtVsmC7uNFl120KrdATptWTzeZQhXKkoHNl0DhH7fSHp9IOtXIAv7gxaj/tCqP0rR6S6GLuyyGqzmhKMiUCfqKWGa71HXI2ri+nU0Dh2F5zURv408YnGSkOLl/CJ6yJfYEh0ZSSEoodx3yQJ4Dh3HJwH3LdSEZAoRpGWZNr1J0nwXapzgkEJAOkJ1imA0Pg8NRgs1lc+vQ4ZDDgXv6KkrbkNchE1PJEjiA8hFozeo51FeiRwxJAkCRVCcz0UsgHnI4fARQfM8C9IIEnNCKpAmO4PoUKO0vdn9u2PQybalcGZlrQ3FMw8ZAAAA') format('woff2'),
+    }
+
+    .iconfontTest {
+      font-family: "iconfontTest" !important;
+      font-size: 16px;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .icon-fanhui:before {
+      content: "\e659";
+    }
+
+
+    .diamond {
+      position: absolute;
+      width: 300px;
+      height: 200px;
+      background-color: rgb(242, 179, 221);
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .div2 {
+      background-color: antiquewhite;
+      flex: 1;
+
+    }
+  </style>
+  <script type="text/javascript">
+    function bigImg(el) {
+      const imgSrc = el.getAttribute('src'); //获取当前的图片链接
+      console.log(imgSrc)
+
+      let _showImg_ = document.getElementById('showImg')
+      
+        // _showImg_.style.display = 'flex';
+        // const childImg = _showImg_.childNodes[0]
+        // childImg.setAttribute('src', imgSrc)
+    
+        _showImg_ = document.createElement('div');
+        const body = document.body
+        _showImg_.innerHTML = `<img src="${imgSrc}" style="max-width: 100%;" />`
+        _showImg_.setAttribute('id', 'showImg');
+        _showImg_.setAttribute('style',
+          'display: flex;justify-content: center;align-items:center;position:fixed;z-index:1000;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,0.7);'
+          );
+        body.appendChild(_showImg_);
+
+        _showImg_.addEventListener('click', function (e) {
+          e.stopPropagation();
+          this.style.display = 'none';
+        });
+    }
+
+  </script>
+</head>
+
+<body>
+  <div id="app1">
+    <div class="diamond">
+      <img onclick="bigImg(this)" width="100" height="100"  src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201906%2F12%2F20190612035848_flwlp.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1625664716&t=e3f0127fb7a269fee6cc17edb3b7633d" />
+    </div>
+  </div>
+</body>
+
+</html>
