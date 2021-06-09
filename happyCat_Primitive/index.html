@@ -6,10 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>得意猫-走路步数兑现金秒到账！</title>
   <style>
-    *{
+  *{
   margin: 0;
   padding: 0;
   /* background-color: bisque; */
+  }
+  .topCover{
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+  }
+  .topCover img{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 227px;
+    height: 54px;
   }
   .top_icon{
     text-align: center;
@@ -181,6 +200,10 @@
   </style>
 </head>
 <body>
+  <div class="topCover" onclick="offCover(this)">
+    <img src="./img/rightTop.png" alt="">
+  </div>
+
   <div class="top">
     <div class="top_icon">
       <img src="./img/icon.png" alt="">
@@ -201,7 +224,7 @@
       </div>
     </div>
     <div class="top_btn">
-      <button onclick="downAPK()">立即下载</button>
+      <button onclick="is_weixn()">立即下载</button>
     </div>
   </div>
 
@@ -323,10 +346,34 @@
   </div>
   <script>
 
-    //点击跳转至下载链接
-    function downAPK(){
-      window.open('https://www.baidu.com');
+    // function downAPK(){
+    //   window.open('https://www.baidu.com');
+    // };
+
+    // function is_weixn(){
+    //   var ua = navigator.userAgent.toLowerCase();
+    //   if(ua.match(/MicroMessenger/i)=="micromessenger") {
+    //     alert("这是微信内置浏览器");
+    //   } else {
+    //     alert("这不是微信内置浏览器");
+    //   };
+    // };
+    
+    //识别微信内置浏览器
+    function is_weixn(){
+      var ua = navigator.userAgent.toLowerCase();
+      if(ua.match(/MicroMessenger/i)=="micromessenger") {
+        let topCover = document.querySelector('.topCover');
+        topCover.style.display = 'flex';
+        // console.log(111);
+      } else {
+        window.open('https://www.baidu.com');//点击跳转至下载链接
+      };
     };
+    function offCover(el){
+      el.style.display = 'none';
+    };
+
 
     //点击放大图片
     function bigImg(el) {
@@ -350,7 +397,7 @@
       body.appendChild(_showImg_);
 
       _showImg_.addEventListener('click', function (e) {
-        e.stopPropagation();
+        // e.stopPropagation();
         this.style.display = 'none';
       }); 
     }
